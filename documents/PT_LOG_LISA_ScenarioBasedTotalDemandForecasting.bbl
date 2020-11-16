@@ -1,0 +1,82 @@
+\begin{thebibliography}{10}
+
+\bibitem{SALINAS20201181}
+David Salinas, Valentin Flunkert, Jan Gasthaus, and Tim Januschowski.
+\newblock Deepar: Probabilistic forecasting with autoregressive recurrent
+  networks.
+\newblock {\em International Journal of Forecasting}, 36(3):1181 -- 1191, 2020.
+
+\bibitem{DBLP:journals/corr/abs-1906-05264}
+Alexander Alexandrov, Konstantinos Benidis, Michael Bohlke{-}Schneider,
+  Valentin Flunkert, Jan Gasthaus, Tim Januschowski, Danielle~C. Maddix,
+  Syama~Sundar Rangapuram, David Salinas, Jasper Schulz, Lorenzo Stella,
+  Ali~Caner T{\"{u}}rkmen, and Yuyang Wang.
+\newblock Gluonts: Probabilistic time series models in python.
+\newblock {\em CoRR}, abs/1906.05264, 2019.
+
+\bibitem{DBLP:journals/corr/Graves13}
+Alex Graves.
+\newblock Generating sequences with recurrent neural networks.
+\newblock {\em CoRR}, abs/1308.0850, 2013.
+
+\bibitem{DBLP:journals/corr/SutskeverVL14}
+Ilya Sutskever, Oriol Vinyals, and Quoc~V. Le.
+\newblock Sequence to sequence learning with neural networks.
+\newblock {\em CoRR}, abs/1409.3215, 2014.
+
+\bibitem{10.5555/3044805.3045048}
+Nicolas Chapados.
+\newblock Effective bayesian modeling of groups of related count time series.
+\newblock In {\em Proceedings of the 31st International Conference on
+  International Conference on Machine Learning - Volume 32}, ICML'14, page
+  II–1395–II–1403. JMLR.org, 2014.
+
+\bibitem{SNYDER2012485}
+Ralph~D. Snyder, J.~Keith Ord, and Adrian Beaumont.
+\newblock Forecasting the intermittent demand for slow-moving inventories: A
+  modelling approach.
+\newblock {\em International Journal of Forecasting}, 28(2):485 -- 496, 2012.
+
+\bibitem{rasul2020multivariate}
+Kashif Rasul, Abdul-Saboor Sheikh, Ingmar Schuster, Urs Bergmann, and Roland
+  Vollgraf.
+\newblock Multi-variate probabilistic time series forecasting via conditioned
+  normalizing flows, 2020.
+
+\bibitem{papamakarios2018masked}
+George Papamakarios, Theo Pavlakou, and Iain Murray.
+\newblock Masked autoregressive flow for density estimation, 2018.
+
+\bibitem{DBLP:journals/corr/DinhSB16}
+Laurent Dinh, Jascha Sohl{-}Dickstein, and Samy Bengio.
+\newblock Density estimation using real {NVP}.
+\newblock {\em CoRR}, abs/1605.08803, 2016.
+
+\bibitem{DBLP:journals/corr/ChungGCB14}
+Junyoung Chung, {\c{C}}aglar G{\"{u}}l{\c{c}}ehre, KyungHyun Cho, and Yoshua
+  Bengio.
+\newblock Empirical evaluation of gated recurrent neural networks on sequence
+  modeling.
+\newblock {\em CoRR}, abs/1412.3555, 2014.
+
+\bibitem{DBLP:journals/corr/VaswaniSPUJGKP17}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock {\em CoRR}, abs/1706.03762, 2017.
+
+\bibitem{DBLP:journals/corr/GuoB16}
+Cheng Guo and Felix Berkhahn.
+\newblock Entity embeddings of categorical variables, 2016.
+
+\bibitem{M5Competition}
+University of~Nicosia.
+\newblock The m5 competition: Competitors' guide, 2020.
+
+\bibitem{MAKRIDAKIS202054}
+Spyros Makridakis, Evangelos Spiliotis, and Vassilios Assimakopoulos.
+\newblock The m4 competition: 100,000 time series and 61 forecasting methods.
+\newblock {\em International Journal of Forecasting}, 36(1):54 -- 74, 2020.
+\newblock M4 Competition.
+
+\end{thebibliography}

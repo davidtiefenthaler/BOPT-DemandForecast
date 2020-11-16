@@ -1,0 +1,172 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand{\transparent@use}[1]{}
+\providecommand*\new@tpo@label[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand \oddpage@label [2]{}
+\select@language{english}
+\@writefile{toc}{\select@language{english}}
+\@writefile{lof}{\select@language{english}}
+\@writefile{lot}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
+\newlabel{section:Intro}{{1}{1}{Introduction}{section.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{1}{section.2}}
+\newlabel{section:Rel}{{2}{1}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Model}{1}{section.3}}
+\newlabel{section:Model}{{3}{1}{Model}{section.3}{}}
+\newlabel{condprob}{{1}{1}{Model}{equation.3.1}{}}
+\citation{SALINAS20201181}
+\citation{DBLP:journals/corr/abs-1906-05264}
+\citation{DBLP:journals/corr/Graves13}
+\citation{DBLP:journals/corr/SutskeverVL14}
+\citation{SALINAS20201181}
+\citation{SALINAS20201181}
+\citation{DBLP:journals/corr/Graves13}
+\citation{DBLP:journals/corr/SutskeverVL14}
+\citation{SALINAS20201181}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Figure 3 from Ref. \cite  {SALINAS20201181}. Summary of the model: Training is shown on the left, prediction is shown on the right. At each time step $t$, the inputs to the network are the covariates $\textbf  {c}^{i}_{t}$, the target value at the previous time step $z^{i}_{t-1}$, and the previous network output $\textbf  {h}^{i}_{t-1}$. The network output $\textbf  {h}_{t}^{i}= \mathfrak  {h}\left (\textbf  {h}^{i}_{t-1},z^{i}_{t-1},\textbf  {c}^{i}_{t},\Theta \right )$ is then used to compute the parameters $\theta ^{i}_{t}=\theta (\textbf  {h}_{t}^{i},\Theta )$ of the likelihood $p(z|\theta )$, which is used for training the model parameters. For prediction, the history of the time series $z^{i}_{t}$ is fed in for $t<t_{0}$, then in the prediction range (right) for $t\ge t_{0}$ a sample $z^{i}_{t}\sim p(.|\theta ^{i}_{t})$ is drawn and fed back for the next point until the end of the prediction range, generating one sample trace. Repeating this prediction process yields many traces that represent the joint predicted distribution.\relax }}{2}{figure.caption.1}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:DeepAR}{{1}{2}{Figure 3 from Ref. \cite {SALINAS20201181}. Summary of the model: Training is shown on the left, prediction is shown on the right. At each time step $\timeiter $, the inputs to the network are the covariates $\icovart $, the target value at the previous time step $\its _{\timeiter -1}$, and the previous network output $\ihiddenstate _{\timeiter -1}$. The network output $\ihiddenstatet = \hiddenstatefunction \left (\ihiddenstate _{\timeiter -1},\its _{\timeiter -1},\icovart ,\paramNN \right )$ is then used to compute the parameters $\iparamdistt =\paramdist (\ihiddenstatet ,\paramNN )$ of the likelihood $\likelihood (\ts |\paramdist )$, which is used for training the model parameters. For prediction, the history of the time series $\itst $ is fed in for $\timeiter <\timeiterzero $, then in the prediction range (right) for $\timeiter \ge \timeiterzero $ a sample $\itst \sim \likelihood (.|\iparamdistt )$ is drawn and fed back for the next point until the end of the prediction range, generating one sample trace. Repeating this prediction process yields many traces that represent the joint predicted distribution.\relax }{figure.caption.1}{}}
+\newlabel{condprobiid}{{2}{2}{Model}{equation.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Approach 1: DeepAR: Probabilistic forecasting with autoregressive recurrent networks}{2}{subsection.3.1}}
+\newlabel{subsection:deepar}{{3.1}{2}{Approach 1: DeepAR: Probabilistic forecasting with autoregressive recurrent networks}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Model}{2}{subsubsection.3.1.1}}
+\newlabel{subsection:approach1model}{{3.1.1}{2}{Model}{subsubsection.3.1.1}{}}
+\newlabel{likelihood}{{3}{2}{Model}{equation.3.3}{}}
+\newlabel{hiddenstate}{{4}{2}{Model}{equation.3.4}{}}
+\citation{10.5555/3044805.3045048}
+\citation{SNYDER2012485}
+\citation{SALINAS20201181}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Likelihood function}{3}{subsubsection.3.1.2}}
+\newlabel{subsubsection:App1likelyhood}{{3.1.2}{3}{Likelihood function}{subsubsection.3.1.2}{}}
+\newlabel{nonnegativebinomial}{{5}{3}{Likelihood function}{equation.3.5}{}}
+\newlabel{nonnegativebinomialparameters}{{6}{3}{Likelihood function}{equation.3.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Training}{3}{subsubsection.3.1.3}}
+\newlabel{subsubsection:App1Training}{{3.1.3}{3}{Training}{subsubsection.3.1.3}{}}
+\newlabel{loglikelihood}{{7}{3}{Training}{equation.3.7}{}}
+\citation{SALINAS20201181}
+\citation{SALINAS20201181}
+\citation{SALINAS20201181}
+\citation{rasul2020multivariate}
+\citation{SALINAS20201181}
+\citation{papamakarios2018masked}
+\citation{DBLP:journals/corr/DinhSB16}
+\citation{DBLP:journals/corr/ChungGCB14}
+\citation{DBLP:journals/corr/VaswaniSPUJGKP17}
+\citation{DBLP:journals/corr/GuoB16}
+\citation{rasul2020multivariate}
+\citation{rasul2020multivariate}
+\citation{rasul2020multivariate}
+\citation{rasul2020multivariate}
+\citation{rasul2020multivariate}
+\citation{rasul2020multivariate}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.4}Scale handling}{4}{subsubsection.3.1.4}}
+\newlabel{subsubsection:App1lScaleHandling}{{3.1.4}{4}{Scale handling}{subsubsection.3.1.4}{}}
+\newlabel{nonnegativebinomialparametersscaled}{{8}{4}{Scale handling}{equation.3.8}{}}
+\newlabel{scalefactor}{{9}{4}{Scale handling}{equation.3.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Approach 2: Multi-variate Probabilistic Time Series Forecasting via Conditioned Normalizing Flows}{4}{subsection.3.2}}
+\newlabel{subsection:zalando}{{3.2}{4}{Approach 2: Multi-variate Probabilistic Time Series Forecasting via Conditioned Normalizing Flows}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Differences between the two Approaches}{4}{subsubsection.3.2.1}}
+\newlabel{subsubsection:diffapproach}{{3.2.1}{4}{Differences between the two Approaches}{subsubsection.3.2.1}{}}
+\citation{papamakarios2018masked}
+\citation{DBLP:journals/corr/DinhSB16}
+\citation{DBLP:journals/corr/DinhSB16}
+\citation{DBLP:journals/corr/DinhSB16}
+\newlabel{fig:subfig:RNN_NormFlow_Zalando}{{2a}{5}{Fig 1 of Ref. \cite {rasul2020multivariate}: RNN Conditioned Real NVP model schematic at time $\timeiter $, consisting of K blocks of coupling layers and Batch Normalization, where in each coupling layer we condition the time series (in the pic denoted $x_t$) and its transformations on the state of a shared RNN from the previous time step and its covariates which are typically timedependent and time independent features.\relax }{figure.caption.2}{}}
+\newlabel{sub@fig:subfig:RNN_NormFlow_Zalando}{{a}{5}{Fig 1 of Ref. \cite {rasul2020multivariate}: RNN Conditioned Real NVP model schematic at time $\timeiter $, consisting of K blocks of coupling layers and Batch Normalization, where in each coupling layer we condition the time series (in the pic denoted $x_t$) and its transformations on the state of a shared RNN from the previous time step and its covariates which are typically timedependent and time independent features.\relax }{figure.caption.2}{}}
+\newlabel{fig:subfig:Transformer_NormFlow_Zalando}{{2b}{5}{Fig 2 of Ref. \cite {rasul2020multivariate}: Transformer Conditioned Real NVP model schematic consisting of an encoder-decoder stack where the encoder takes in some context length of time series and then uses it to generate conditioning for the prediction length portion of the time series via a causally masked decoder stack. The output of the decoder is used as conditioning to train the flow. Note that the positional encodings are part of the covariates and unlike the RNN model,here all time series time points are trained in parallel.\relax }{figure.caption.2}{}}
+\newlabel{sub@fig:subfig:Transformer_NormFlow_Zalando}{{b}{5}{Fig 2 of Ref. \cite {rasul2020multivariate}: Transformer Conditioned Real NVP model schematic consisting of an encoder-decoder stack where the encoder takes in some context length of time series and then uses it to generate conditioning for the prediction length portion of the time series via a causally masked decoder stack. The output of the decoder is used as conditioning to train the flow. Note that the positional encodings are part of the covariates and unlike the RNN model,here all time series time points are trained in parallel.\relax }{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The two main different model architectures of approach 2 based on Ref. \cite  {rasul2020multivariate}\relax }}{5}{figure.caption.2}}
+\newlabel{fig:Approach2}{{2}{5}{The two main different model architectures of approach 2 based on Ref. \cite {rasul2020multivariate}\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Model}{5}{subsubsection.3.2.2}}
+\newlabel{subsection:approach2model}{{3.2.2}{5}{Model}{subsubsection.3.2.2}{}}
+\newlabel{condprob}{{10}{5}{Model}{equation.3.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Conditioned Real NVP}{5}{subsubsection.3.2.3}}
+\newlabel{subsection:approach2condflow}{{3.2.3}{5}{Conditioned Real NVP}{subsubsection.3.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Performance Evalution}{5}{section.4}}
+\newlabel{section:Perf}{{4}{5}{Performance Evalution}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Forecast Horizon}{5}{subsection.4.1}}
+\newlabel{subsection:ForecastHorizon}{{4.1}{5}{Forecast Horizon}{subsection.4.1}{}}
+\newlabel{horizonweigths}{{11}{5}{Forecast Horizon}{equation.4.11}{}}
+\citation{M5Competition}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Fig. 1 from Ref. \cite  {DBLP:journals/corr/DinhSB16}. Real NVP learns an invertible, stable, mapping between a data distribution and a latent distribution (typically a Gaussian).\relax }}{6}{figure.caption.3}}
+\newlabel{fig:RealNVP}{{3}{6}{Fig. 1 from Ref. \cite {DBLP:journals/corr/DinhSB16}. Real NVP learns an invertible, stable, mapping between a data distribution and a latent distribution (typically a Gaussian).\relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Historic Horizon}{6}{subsection.4.2}}
+\newlabel{subsection:HistoricHorizon}{{4.2}{6}{Historic Horizon}{subsection.4.2}{}}
+\newlabel{pastweigths}{{12}{6}{Historic Horizon}{equation.4.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Point Forecast}{6}{subsection.4.3}}
+\newlabel{subsection:PointForecast}{{4.3}{6}{Point Forecast}{subsection.4.3}{}}
+\newlabel{pointforecast}{{13}{6}{Point Forecast}{equation.4.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Root Mean Squared Scaled Error}{6}{subsubsection.4.3.1}}
+\newlabel{subsubsection:RootMeanSquaredScaledError}{{4.3.1}{6}{Root Mean Squared Scaled Error}{subsubsection.4.3.1}{}}
+\newlabel{RMSSE}{{14}{6}{Root Mean Squared Scaled Error}{equation.4.14}{}}
+\newlabel{WRMSSE}{{15}{7}{Root Mean Squared Scaled Error}{equation.4.15}{}}
+\newlabel{fcqualityweight}{{16}{7}{Root Mean Squared Scaled Error}{equation.4.16}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Forecast Accuracy and FC Bias}{7}{subsubsection.4.3.2}}
+\newlabel{subsubsection:FCAFCB}{{4.3.2}{7}{Forecast Accuracy and FC Bias}{subsubsection.4.3.2}{}}
+\newlabel{are}{{17}{7}{Forecast Accuracy and FC Bias}{equation.4.17}{}}
+\newlabel{tare}{{18}{7}{Forecast Accuracy and FC Bias}{equation.4.18}{}}
+\newlabel{fca}{{19}{7}{Forecast Accuracy and FC Bias}{equation.4.19}{}}
+\newlabel{fcaweights}{{20}{7}{Forecast Accuracy and FC Bias}{equation.4.20}{}}
+\citation{MAKRIDAKIS202054}
+\newlabel{fca2}{{21}{8}{Forecast Accuracy and FC Bias}{equation.4.21}{}}
+\newlabel{re}{{22}{8}{Forecast Accuracy and FC Bias}{equation.4.22}{}}
+\newlabel{tare}{{23}{8}{Forecast Accuracy and FC Bias}{equation.4.23}{}}
+\newlabel{fca}{{24}{8}{Forecast Accuracy and FC Bias}{equation.4.24}{}}
+\newlabel{fca2}{{25}{8}{Forecast Accuracy and FC Bias}{equation.4.25}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}Overall Weighted Error}{8}{subsubsection.4.3.3}}
+\newlabel{subsubsection:OverallWeightedError}{{4.3.3}{8}{Overall Weighted Error}{subsubsection.4.3.3}{}}
+\newlabel{normwrmsse}{{26}{8}{Overall Weighted Error}{equation.4.26}{}}
+\newlabel{normwrmsse}{{27}{8}{Overall Weighted Error}{equation.4.27}{}}
+\newlabel{naiveforecast}{{28}{8}{Overall Weighted Error}{equation.4.28}{}}
+\newlabel{naiveforecast}{{29}{8}{Overall Weighted Error}{equation.4.29}{}}
+\bibstyle{unsrt}
+\bibdata{PT_LOG_LISA_ScenarioBasedTotalDemandForecasting}
+\bibcite{SALINAS20201181}{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Probabilistic Forecast}{9}{subsection.4.4}}
+\newlabel{subsection:ProbabilisticForecast}{{4.4}{9}{Probabilistic Forecast}{subsection.4.4}{}}
+\newlabel{pinballloss}{{30}{9}{Probabilistic Forecast}{equation.4.30}{}}
+\newlabel{scaledpinballloss}{{31}{9}{Probabilistic Forecast}{equation.4.31}{}}
+\newlabel{scaledpinballlossquantiles}{{32}{9}{Probabilistic Forecast}{equation.4.32}{}}
+\newlabel{quantiles}{{33}{9}{Probabilistic Forecast}{equation.4.33}{}}
+\newlabel{quantileweigths}{{34}{9}{Probabilistic Forecast}{equation.4.34}{}}
+\newlabel{scaledpinballlossquantiles}{{35}{9}{Probabilistic Forecast}{equation.4.35}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Implementation}{9}{section.5}}
+\newlabel{section:Impl}{{5}{9}{Implementation}{section.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results}{9}{section.6}}
+\newlabel{section:Res}{{6}{9}{Results}{section.6}{}}
+\bibcite{DBLP:journals/corr/abs-1906-05264}{2}
+\bibcite{DBLP:journals/corr/Graves13}{3}
+\bibcite{DBLP:journals/corr/SutskeverVL14}{4}
+\bibcite{10.5555/3044805.3045048}{5}
+\bibcite{SNYDER2012485}{6}
+\bibcite{rasul2020multivariate}{7}
+\bibcite{papamakarios2018masked}{8}
+\bibcite{DBLP:journals/corr/DinhSB16}{9}
+\bibcite{DBLP:journals/corr/ChungGCB14}{10}
+\bibcite{DBLP:journals/corr/VaswaniSPUJGKP17}{11}
+\bibcite{DBLP:journals/corr/GuoB16}{12}
+\bibcite{M5Competition}{13}
+\bibcite{MAKRIDAKIS202054}{14}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Future Work}{10}{section.7}}
+\newlabel{section:Future}{{7}{10}{Future Work}{section.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{10}{section.8}}
+\newlabel{section:Concl}{{8}{10}{Conclusion}{section.8}{}}
+\newlabel{LastPage}{{}{10}{}{page.10}{}}
+\xdef\lastpage@lastpage{10}
+\xdef\lastpage@lastpageHy{10}
